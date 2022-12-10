@@ -42,7 +42,7 @@ def play_and_log_episode(env, agent, gamma=0.99, t_max=10000):
 
         action = qvalues.argmax(axis=-1)[0]
 
-        s, r, done, _ = env.step(action)
+        s, r, done,info,_ = env.step(action)
         rewards.append(r)
         if done:
             break
