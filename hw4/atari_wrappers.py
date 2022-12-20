@@ -10,7 +10,7 @@ from gym.envs import atari
 from gym.wrappers.record_video import RecordVideo
 from tensorboardX import SummaryWriter
 
-from env_batch import ParallelEnvBatch
+from hw4.env_batch import ParallelEnvBatch
 cv2.ocl.setUseOpenCL(False)
 
 
