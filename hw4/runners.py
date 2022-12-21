@@ -65,7 +65,8 @@ class EnvRunner:
         trajectory.update(
             observations=observations,
             rewards=rewards,
-            dones=dones)
+            dones=dones,
+            )
 
         for transform in self.transforms:
             transform(trajectory, self.latest_observation)
